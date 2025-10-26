@@ -63,7 +63,7 @@ def plot_country_distributions(country_times):
         total_runners = len(seconds_list)
         plt.savefig(f"histograms/individual-countries/2025/FF_HM_2025_{nat}.pdf")
         plt.close()
-        # print(f"Histogram for {nat} saved. Total runners: {total_runners}")
+        print(f"Histogram for {nat} saved. Total runners: {total_runners}")
 
     print("PDFs of the histograms have been successfully generated")
     print("There are a total of " + str(countryCount) + " nationalities in this event")
