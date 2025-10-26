@@ -4,7 +4,7 @@ A small Python script to extract finish times from Frankfurt half-marathon resul
 
 ## What it does
 - Extracts finish times from a results PDF (https://www.frankfurter-halbmarathon.de/ergebnisarchiv)
-- Plots these times on a cumulative grah
+- Plots these times on a histogram
 
 ## The graphs
 - The generated plots for the year 2024 and 2025 are saved to the `histograms` folder in the repository. They file names are 'FF_HM_2024.pdf' and 'FF_HM_2025.pdf' respectively.
