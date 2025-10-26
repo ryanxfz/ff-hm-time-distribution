@@ -65,7 +65,7 @@ def plot_finish_time_distribution(seconds_list):
     xtick_labels = [f"{int(m//60):01d}:{int(m%60):02d}:00" for m in xticks]
     plt.xticks(xticks, xtick_labels, rotation=45)
     
-    # Calculate standout values
+    # standout values
     total_runners = len(seconds_list)
     fastest = min(seconds_list)
     slowest = max(seconds_list)
