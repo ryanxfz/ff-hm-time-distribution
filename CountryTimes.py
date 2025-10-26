@@ -2,6 +2,7 @@ import pdfplumber
 import numpy as np
 import re
 import matplotlib.pyplot as plt
+from matplotlib.ticker import MaxNLocator
 from collections import defaultdict
 
 def extract_country_finish_times(pdf_path, start_page, end_page):
@@ -53,6 +54,7 @@ def plot_country_distributions(country_times):
         plt.title(f'Finish Time Distribution - {nat}')
         plt.xlabel('Finish Time (HH:MM:SS)')
         plt.ylabel('Number of Runners')
+        plt.gca().yaxis.set_major_locator(MaxNLocator(integer=True)) # makes sure that the numb er of runner are not decimals
         plt.grid(axis='y', linestyle='--', alpha=0.7)
         plt.tight_layout()
 
