@@ -1,4 +1,4 @@
-# Frankfurt Half Marathon — Time Distribution
+# Frankfurt Half Marathon: Time Distribution
 
 A small Python script to extract finish times from Frankfurt half-marathon result PDFs and plot the finish-time distribution. The purpose of this script is to find an achievable race goal for my race in 2026 by examining finish-time percentiles.
 
