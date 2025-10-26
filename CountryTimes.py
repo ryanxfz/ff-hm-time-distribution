@@ -39,7 +39,12 @@ def convert_times_to_seconds(times):
     return seconds_list
 
 def plot_country_distributions(country_times):
+    print("Making Histogram for each country with at least 10 runners")
+    countryCount = 0
     for nat, times in country_times.items():
+        countryCount += 1
+        if len(times) < 10: # skip countries with less than 10 participants
+            continue
         seconds_list = convert_times_to_seconds(times)
         minutes_list = [s / 60 for s in seconds_list]
         plt.figure(figsize=(16, 6))
@@ -58,7 +63,10 @@ def plot_country_distributions(country_times):
         total_runners = len(seconds_list)
         plt.savefig(f"histograms/individual-countries/2025/FF_HM_2025_{nat}.pdf")
         plt.close()
-        print(f"Histogram for {nat} saved. Total runners: {total_runners}")
+        # print(f"Histogram for {nat} saved. Total runners: {total_runners}")
+
+    print("PDFs of the histograms have been successfully generated")
+    print("There are a total of " + str(countryCount) + " nationalities in this event")
 
 if __name__ == "__main__":
     time_pdf = "results/ffhm2025.pdf"
