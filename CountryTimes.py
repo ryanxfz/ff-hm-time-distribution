@@ -63,7 +63,7 @@ def plot_country_distributions(country_times):
         plt.xticks(xticks, xtick_labels, rotation=45)
 
         total_runners = len(seconds_list)
-        plt.savefig(f"histograms/individual-countries/2025/FF_HM_2025_{nat}.pdf")
+        plt.savefig(f"histograms/individual-countries/2024/FF_HM_2024_{nat}.pdf")
         plt.close()
         print(f"Histogram for {nat} saved. Total runners: {total_runners}")
 
@@ -71,7 +71,7 @@ def plot_country_distributions(country_times):
     print("There are a total of " + str(countryCount) + " nationalities in this event")
 
 if __name__ == "__main__":
-    time_pdf = "results/ffhm2025.pdf"
+    time_pdf = "results/ffhm2024.pdf"
     with pdfplumber.open(time_pdf) as pdf_file:
         total_pages = len(pdf_file.pages)
     country_times = extract_country_finish_times(time_pdf, 1, total_pages)
