@@ -7,7 +7,7 @@ A small Python script to extract finish times from Frankfurt half-marathon resul
 - Plots these times on a histogram
 
 ## The graphs
-- The generated plots for the year 2024 and 2025 are saved to the `histograms` folder in the repository. They file names are 'FF_HM_2024.pdf' and 'FF_HM_2025.pdf' respectively.
+- The generated plots for the year 2024 and 2025 are saved to the `histograms` folder in the repository. They file names are `FF_HM_2024.pdf` and `FF_HM_2025.pdf` respectively.
 - NOTE: Each block (bins) in the histogram represents a 1-minute interval of the finish times.
 - ## Extension:
     - I've also added the histograms of each countries with at least 10 runners... cuz why not.
