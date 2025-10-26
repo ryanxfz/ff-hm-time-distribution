@@ -6,5 +6,6 @@ A small Python program to extract finish times from Frankfurt half-marathon resu
 - Extracts finish times from a results PDF (https://www.frankfurter-halbmarathon.de/ergebnisarchiv)
 - Plots these times on a cumulative grah
 
-## View the graph
-All generated plots are saved to the `graphs/` folder in the repository.
+## The graphs
+- All generated plots are saved to the `histogram` folder in the repository.
+- NOTE: Each block (bins) in the histogram represents a 1-minute interval of the finish times.
