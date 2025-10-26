@@ -93,11 +93,11 @@ def plot_finish_time_distribution(seconds_list):
     plt.text(0.01, 0.95, f"Total runners: {total_runners}", ha='left', va='top',
              transform=plt.gca().transAxes, fontsize=12, bbox=dict(facecolor='white', alpha=0.7, edgecolor='none'))
     
-    plt.savefig("graphs/FF_HM_2025.pdf")
+    plt.savefig("graphs/FF_HM_2024.pdf")
     print("Distribution graph pdf successfully created!")
 
 if __name__ == "__main__":
-    time_pdf = "results/ffhm2025.pdf"
+    time_pdf = "results/ffhm2024.pdf"
     with pdfplumber.open(time_pdf) as pdf_file:
         total_pages = len(pdf_file.pages)
     finish_times = extract_finish_times(time_pdf, 1, total_pages)
