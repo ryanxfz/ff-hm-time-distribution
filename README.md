@@ -1,6 +1,6 @@
 # Frankfurt Half Marathon: Time Distribution
 
-A small Python script to extract finish times from Frankfurt half-marathon result PDFs and plot the finish-time distribution. The purpose of this script is to find an achievable race goal for my race in 2026 by examining finish-time percentiles. It's also a nice little project to practice some python.
+A small Python script to extract finish times from Frankfurt half-marathon result PDFs and plot the finish-time distribution. The purpose of this script is to find an achievable race goal for my race in 2026 by examining finish-time percentiles. It's also a nice little project to practice some python. The results are only from the years 2024 and 2025. The results from 2023 and earlier could only be queried for a maximum of every 100 runners, which means I would have to download hundreds of pdf files from the internet.
 
 ## What it does
 - Extracts finish times from a results PDF (https://www.frankfurter-halbmarathon.de/ergebnisarchiv)
@@ -8,6 +8,7 @@ A small Python script to extract finish times from Frankfurt half-marathon resul
 
 ## The histogram
 - The generated plots for the year 2024 and 2025 are saved to the `histograms` folder in the repository. The file names are `FF_HM_2024.pdf` and `FF_HM_2025.pdf` respectively.
+- The histogram for the cumulated results of 2024 and 2025 can also be found under the `histograms` directory with the file name `FF_HM_2425`.
 - NOTE: Each block (bins) in the histogram represents a 1-minute interval of the finish times.
 - ## Extension:
     - I've also added the histograms of each countries with at least 10 runners... cuz why not.

@@ -93,7 +93,7 @@ def plot_finish_time_distribution(seconds_list):
     plt.text(0.01, 0.95, f"Total runners: {total_runners}", ha='left', va='top',
              transform=plt.gca().transAxes, fontsize=12, bbox=dict(facecolor='white', alpha=0.7, edgecolor='none'))
     plt.tight_layout()
-    plt.savefig("histograms/FF_HM_2025.pdf")
+    plt.savefig("histograms/FF_HM.pdf")
     print("Distribution graph pdf successfully created!")
 
 if __name__ == "__main__":
